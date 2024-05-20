@@ -14,8 +14,8 @@ header.banner {
         url('../images/banner.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
-    padding-top: 60px;
+    height: auto;
+    padding: 60px 0 73px;
     border-bottom: 1px solid #33A8DB80;
 }
 
@@ -35,7 +35,7 @@ header.banner p {
 }
 
 header.banner .banner-content {
-    width: 600px;
+    width: 46%;
     margin: auto;
 }
 
@@ -50,6 +50,7 @@ header.banner .banner-content button {
     border-image: linear-gradient(#3BA1CD, #1572B7);
     border-image-slice: 10;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 header.banner .banner-content button:hover {
@@ -71,4 +72,79 @@ header.banner .logo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+section#course-content, section#transform-world, section#professional-challenges {
+    margin: 100px auto;
+}
+
+section#course-content, section#professional-challenges {
+    width: 59%;
+}
+
+section#course-content h2, section#professional-challenges h2 {
+    font-size: 2rem;
+    color: #33A8DB;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+section#course-content .modules-list {
+    margin: 24px 0;
+}
+
+section#course-content .modules-list .module span {
+    color: #33A8DB;
+}
+
+section#course-content .modules-list .module {
+    width: 97%;
+    margin: 0 auto 24px;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+
+section#transform-world {
+    height: 560px;
+    background-size: cover;
+    background-image: url("../images/woman-code.png");
+    background-attachment: fixed;
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    padding: 200px;
+}
+  
+section#transform-world p {
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    max-width: 250px;
+    text-shadow: 3px 2px #33A8DB;
+    text-align: start;
+}
+
+section#professional-challenges img {
+    margin: 32px 0;
+    width: 83%;
+}
+
+footer {
+    padding: 60px 0;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+}
+  
+footer .dio-logo {
+    width: 300px;
+}
+  
+footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
 }
